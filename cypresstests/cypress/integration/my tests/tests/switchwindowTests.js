@@ -1,8 +1,8 @@
-import SwitchWindowPage from "../pages/switchWindowPage";
+import { SwitchWindow } from "../pages/practice";
 
 describe("Switch Window Example", () => {
   it("Click Switch Window Example", () => {
-    const switchWindow = new SwitchWindowPage();
+    const switchWindow = new SwitchWindow();
     switchWindow.navigate();
     switchWindow.clickSwitchWindow();
     cy.url().should("include", "https://courses.letskodeit.com/courses");

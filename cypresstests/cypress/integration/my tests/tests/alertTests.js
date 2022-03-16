@@ -1,7 +1,7 @@
-import { PracticePage } from "../pages";
+import { Alert } from "../pages/practice";
 describe("Alert Example", () => {
   it("Click AlertExample", () => {
-    const alertpage = new PracticePage.AlertPage();
+    const alertpage = new Alert();
     alertpage.navigate();
     alertpage.clickAlertButton;
     cy.on("window:alert", (txt) => {
@@ -12,7 +12,7 @@ describe("Alert Example", () => {
     });
   });
   it("Enters text into text box and confirms message", () => {
-    const alertpage = new AlertPage();
+    const alertpage = new Alert();
     alertpage.navigate();
     alertpage.enterName("canice test");
     alertpage.clickConfirm();

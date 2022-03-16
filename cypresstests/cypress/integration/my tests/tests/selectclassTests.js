@@ -1,4 +1,4 @@
-import SelectClassPage from "../pages/selectClassPage";
+import { SelectClass } from "../pages/practice";
 
 describe("Select Class Example", () => {
   it("finds the Select Class Example", () => {
@@ -6,7 +6,7 @@ describe("Select Class Example", () => {
     cy.get('[id= "select-class-example"]');
   });
   it("Selects BMW option", () => {
-    const classpage = new SelectClassPage();
+    const classpage = new SelectClass();
     {
       classpage.navigate();
       classpage.selectOption("bmw");
@@ -14,7 +14,7 @@ describe("Select Class Example", () => {
     }
   });
   it("Selects Benz option", () => {
-    const classpage = new SelectClassPage();
+    const classpage = new SelectClass();
     {
       classpage.navigate();
       classpage.selectOption("benz");
@@ -22,7 +22,7 @@ describe("Select Class Example", () => {
     }
   });
   it("Selects Honda option", () => {
-    const classpage = new SelectClassPage();
+    const classpage = new SelectClass();
     {
       classpage.navigate();
       classpage.selectOption("honda");

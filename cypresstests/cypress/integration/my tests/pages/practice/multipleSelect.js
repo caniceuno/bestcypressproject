@@ -1,4 +1,4 @@
-class MultipleSelectPage {
+class MultipleSelect {
   navigate() {
     cy.visit("https://courses.letskodeit.com/practice");
   }
@@ -17,4 +17,4 @@ class MultipleSelectPage {
   }
 }
 
-export default MultipleSelectPage;
+export default MultipleSelect;

@@ -1,4 +1,4 @@
-import RadioButtonPage from "../pages/radioButtonPage";
+import { RadioButton } from "../pages/practice";
 const { hasUncaughtExceptionCaptureCallback } = require("process");
 require("cypress-xpath");
 describe("Radio Button Example", () => {
@@ -7,7 +7,7 @@ describe("Radio Button Example", () => {
     cy.xpath('//*[@id="radio-btn-example"]/fieldset/legend');
   });
   it("Selects BMW option", () => {
-    const radiobutton = new RadioButtonPage();
+    const radiobutton = new RadioButton();
     {
       radiobutton.navigate();
       radiobutton.checkButton("bmw");
@@ -18,7 +18,7 @@ describe("Radio Button Example", () => {
     // would like to know if i can add in tests to asset that other two values are not checked
   });
   it("Selects Benz option", () => {
-    const radiobutton = new RadioButtonPage();
+    const radiobutton = new RadioButton();
     {
       radiobutton.navigate();
       radiobutton.checkButton("benz");
@@ -28,7 +28,7 @@ describe("Radio Button Example", () => {
     }
   });
   it("Selects Honda option", () => {
-    const radiobutton = new RadioButtonPage();
+    const radiobutton = new RadioButton();
     {
       radiobutton.navigate();
       radiobutton.checkButton("honda");

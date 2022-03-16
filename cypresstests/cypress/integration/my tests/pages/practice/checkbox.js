@@ -52,4 +52,4 @@ class Checkbox {
   }
 }
 
-export default CheckboxPage;
+export default Checkbox;

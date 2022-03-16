@@ -1,4 +1,4 @@
-class SwitchTabPage {
+class SwitchTab {
   navigate() {
     cy.visit("https://courses.letskodeit.com/practice");
   }
@@ -8,4 +8,4 @@ class SwitchTabPage {
   }
 }
 
-export default SwitchTabPage;
+export default SwitchTab;

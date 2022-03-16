@@ -1,4 +1,4 @@
-class SelectClassPage {
+class SelectClass {
   navigate() {
     cy.visit("https://courses.letskodeit.com/practice");
   }
@@ -32,4 +32,4 @@ class SelectClassPage {
   }
 }
 
-export default SelectClassPage;
+export default SelectClass;

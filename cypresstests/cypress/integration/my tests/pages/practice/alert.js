@@ -1,4 +1,4 @@
-class Alert {
+class AlertPage {
   navigate() {
     cy.visit("https://courses.letskodeit.com/practice");
   }

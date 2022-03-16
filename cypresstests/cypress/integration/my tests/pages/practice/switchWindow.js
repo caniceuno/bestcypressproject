@@ -1,4 +1,4 @@
-class SwitchWindowPage {
+class SwitchWindow {
   navigate() {
     cy.visit("https://courses.letskodeit.com/practice");
   }
@@ -8,4 +8,4 @@ class SwitchWindowPage {
   }
 }
 
-export default SwitchWindowPage;
+export default SwitchWindow;

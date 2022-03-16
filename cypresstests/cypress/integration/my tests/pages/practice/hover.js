@@ -1,4 +1,4 @@
-class HoverPage {
+class Hover {
   navigate() {
     cy.visit("https://courses.letskodeit.com/practice");
   }
@@ -15,4 +15,4 @@ class HoverPage {
   }
 }
 
-export default HoverPage;
+export default Hover;

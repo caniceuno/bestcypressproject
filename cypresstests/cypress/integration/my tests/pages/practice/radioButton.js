@@ -1,4 +1,4 @@
-class RadioButtonPage {
+class RadioButton {
   navigate() {
     cy.visit("https://courses.letskodeit.com/practice");
   }
@@ -23,4 +23,4 @@ class RadioButtonPage {
   }
 }
 
-export default RadioButtonPage;
+export default RadioButton;

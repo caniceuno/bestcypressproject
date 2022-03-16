@@ -1,8 +1,8 @@
-import WebTablePage from "../pages/webtablePage";
+import { WebTable } from "../pages/practice";
 
 describe("Web Table Example", () => {
   it("Confirms size of price table", () => {
-    const webtable = new WebTablePage();
+    const webtable = new WebTable();
     webtable.navigate();
     webtable.getTd.its("length").should("eq", 9);
     webtable.getTr.its("length").should("eq", 4);

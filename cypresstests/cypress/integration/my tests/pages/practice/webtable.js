@@ -1,4 +1,4 @@
-class WebTablePage {
+class WebTable {
   navigate() {
     cy.visit("https://courses.letskodeit.com/practice");
   }
@@ -13,4 +13,4 @@ class WebTablePage {
   }
 }
 
-export default WebTablePage;
+export default WebTable;

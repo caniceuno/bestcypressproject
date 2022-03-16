@@ -1,4 +1,4 @@
-class HideShowPage {
+class HideShow {
   navigate() {
     cy.visit("https://courses.letskodeit.com/practice");
   }
@@ -23,4 +23,4 @@ class HideShowPage {
   }
 }
 
-export default HideShowPage;
+export default HideShow;

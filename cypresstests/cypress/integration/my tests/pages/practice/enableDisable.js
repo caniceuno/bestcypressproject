@@ -1,4 +1,4 @@
-class EnableDisablePage {
+class EnableDisable {
   navigate() {
     cy.visit("https://courses.letskodeit.com/practice");
   }
@@ -13,4 +13,4 @@ class EnableDisablePage {
   }
 }
 
-export default EnableDisablePage;
+export default EnableDisable;

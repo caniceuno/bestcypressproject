@@ -1,14 +1,14 @@
-import EnableDisablePage from "../pages/enabledisablePage";
+import { EnableDisable } from "../pages/practice";
 
 describe("Enable/disable Example", () => {
   it("Clicks disable button", () => {
-    const enabledisable = new EnableDisablePage();
+    const enabledisable = new EnableDisable();
     enabledisable.navigate();
     enabledisable.clickDisableButton();
     cy.get('[id = "enabled-example-input"]').should("be.disabled");
   });
   it("Clicks enabled button and enters text", () => {
-    const enabledisable = new EnableDisablePage();
+    const enabledisable = new EnableDisable();
     enabledisable.navigate();
     enabledisable.clickEnableButton();
     enabledisable.enterText("Canice");
