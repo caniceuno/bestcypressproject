@@ -1,7 +1,7 @@
 import { HideShow } from "../pages/practice";
 
 describe("Hide/show Example", () => {
-  it("Clicks Hide button", () => {
+  it("Clicks Hide button (smoke)", () => {
     const hideshow = new HideShow();
     hideshow.navigate();
     hideshow.clickHideButton();

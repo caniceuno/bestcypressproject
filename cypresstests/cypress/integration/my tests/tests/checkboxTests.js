@@ -1,5 +1,5 @@
 import { Checkbox } from "../pages/practice";
-describe("Checkbox Example", () => {
+describe("Checkbox Example (smoke)", () => {
   it("finds the Checkbox Example", () => {
     cy.visit("https://courses.letskodeit.com/practice");
     cy.get('[id="checkbox-example-div"]');
@@ -11,11 +11,11 @@ describe("Checkbox Example", () => {
   });
   it.only("Checks and unchecks bmw", () => {
     const checkbox = new Checkbox();
-
     checkbox.navigate();
     checkbox.checkallElements();
     checkbox.allElementsAreChecked();
     checkbox.unCheckallElements();
     checkbox.allElementsNotChecked();
+    cy.screenshot();
   });
 });
